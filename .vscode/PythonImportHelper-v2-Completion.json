@@ -1,0 +1,85 @@
+[
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "Service",
+        "importPath": "selenium.webdriver.chrome.service",
+        "description": "selenium.webdriver.chrome.service",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.chrome.service",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "Keys",
+        "importPath": "selenium.webdriver.common.keys",
+        "description": "selenium.webdriver.common.keys",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.keys",
+        "documentation": {}
+    },
+    {
+        "label": "WebDriverWait",
+        "importPath": "selenium.webdriver.support.ui",
+        "description": "selenium.webdriver.support.ui",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support.ui",
+        "documentation": {}
+    },
+    {
+        "label": "expected_conditions",
+        "importPath": "selenium.webdriver.support",
+        "description": "selenium.webdriver.support",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support",
+        "documentation": {}
+    },
+    {
+        "label": "ChromeDriverManager",
+        "importPath": "webdriver_manager.chrome",
+        "description": "webdriver_manager.chrome",
+        "isExtraImport": true,
+        "detail": "webdriver_manager.chrome",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "service",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "service = Service(ChromeDriverManager().install())\ndriver = webdriver.Chrome(service=service)\ndriver.get(\"https://www.facebook.com\")\ntry:\n    email_field = WebDriverWait(driver,10).until(EC.presence_of_element_located((By.ID, \"email\")))\n    email_field.send_keys(\"santiago.gualotuna@hotmail.com\")\n    password_field = driver.find_element(By.ID, \"pass\")\n    password_field.send_keys(\"eGU8fsbHCd4&kS\")\n    password_field.send_keys(Keys.RETURN)\n    WebDriverWait(driver, 10).until(",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "driver",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "driver = webdriver.Chrome(service=service)\ndriver.get(\"https://www.facebook.com\")\ntry:\n    email_field = WebDriverWait(driver,10).until(EC.presence_of_element_located((By.ID, \"email\")))\n    email_field.send_keys(\"santiago.gualotuna@hotmail.com\")\n    password_field = driver.find_element(By.ID, \"pass\")\n    password_field.send_keys(\"eGU8fsbHCd4&kS\")\n    password_field.send_keys(Keys.RETURN)\n    WebDriverWait(driver, 10).until(\n        EC.presence_of_element_located((By.CSS_SELECTOR, \"[aria-label='Facebook']\"))",
+        "detail": "main",
+        "documentation": {}
+    }
+]
