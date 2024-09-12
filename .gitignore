@@ -11,3 +11,5 @@ selenium_venv/
 # Ignorar configuraciones de herramientas
 .mypy_cache/
 .pytest_cache/
+
+.vscode/
