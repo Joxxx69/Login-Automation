@@ -5,7 +5,7 @@
 __pycache__/
 
 # Ignorar entornos virtuales
-selenium_venv/
+selenium_env/
 .env
 
 # Ignorar configuraciones de herramientas
