@@ -1,0 +1,13 @@
+# Ignorar archivos de bytecode compilado
+*.pyc
+
+# Ignorar directorios de caché
+__pycache__/
+
+# Ignorar entornos virtuales
+selenium_venv/
+.env
+
+# Ignorar configuraciones de herramientas
+.mypy_cache/
+.pytest_cache/
